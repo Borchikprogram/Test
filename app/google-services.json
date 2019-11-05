@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "231139397372",
+    "firebase_url": "https://android-sport-fb95c.firebaseio.com",
+    "project_id": "android-sport-fb95c",
+    "storage_bucket": "android-sport-fb95c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231139397372:android:f363407d1d70e5c1",
+        "android_client_info": {
+          "package_name": "com.example.myfirstapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231139397372-lq06hlij23jjssen2mfgc3n9noi98tak.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myfirstapp",
+            "certificate_hash": "d2c97c69ec1b6178cc969ddc9c52677d4612d749"
+          }
+        },
+        {
+          "client_id": "231139397372-hna1aapko4ba0m300gb43u8ts2j87oat.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAw3svWExxAMxU7VXeCEpby0izlUH70AQc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231139397372-hna1aapko4ba0m300gb43u8ts2j87oat.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

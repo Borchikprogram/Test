@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".activities.EditProfileActivity">
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/toolbar"
+            android:elevation="4dp"
+            app:contentInsetStart="0dp"
+            tools:ignore="MissingConstraints">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:id="@+id/close_image"
+                   android:padding="10dp"
+                   android:src="@drawable/ic_close"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+        
+        <TextView android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:text="Изменение профиля:"
+              android:textColor="@color/black"
+              android:textSize="19sp"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintStart_toEndOf="@id/close_image"
+              app:layout_constraintTop_toTopOf="parent"
+        />
+        <ImageView android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:id="@+id/save_img"
+                   android:padding="10dp"
+                   android:src="@drawable/ic_check"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Фамилия и Имя"
+              android:id="@+id/name_label"
+              android:layout_marginLeft="20dp"
+              android:labelFor="@id/name_input"
+              android:textColor="@color/gray"
+              app:layout_constraintTop_toBottomOf="@+id/younost"
+
+              tools:layout_editor_absoluteX="23dp" tools:layout_editor_absoluteY="194dp"/>
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/name_input"
+              app:layout_constraintTop_toBottomOf="@id/name_label"
+              android:layout_marginStart="20dp"
+              android:layout_marginEnd="20dp"
+              android:inputType="text"
+    />
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Пояс"
+              android:id="@+id/belt_label"
+              app:layout_constraintTop_toBottomOf="@+id/name_input"
+              android:layout_marginStart="23dp"
+              android:labelFor="@id/name_input"
+              android:textColor="@color/gray"
+    />
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/belt_input"
+              app:layout_constraintTop_toBottomOf="@id/belt_label"
+              android:layout_marginStart="20dp"
+              android:layout_marginEnd="20dp"
+              android:inputType="text"
+    />
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Телефон"
+              android:id="@+id/phone_label"
+              app:layout_constraintTop_toBottomOf="@+id/belt_input"
+              android:layout_marginStart="23dp"
+              android:labelFor="@id/name_input"
+              android:textColor="@color/gray"
+    />
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/phone_input"
+              app:layout_constraintTop_toBottomOf="@id/phone_label"
+              android:layout_marginStart="20dp"
+              android:layout_marginEnd="20dp"
+              android:inputType="number"
+    />
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Возраст"
+              android:id="@+id/old_label"
+              app:layout_constraintTop_toBottomOf="@+id/phone_input"
+              android:layout_marginStart="23dp"
+              android:labelFor="@id/name_input"
+              android:textColor="@color/gray"
+    />
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/old_input"
+              app:layout_constraintTop_toBottomOf="@id/old_label"
+              android:layout_marginStart="20dp"
+              android:layout_marginEnd="20dp"
+              android:inputType="number"
+    />
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Email"
+              android:id="@+id/email_label"
+              app:layout_constraintTop_toBottomOf="@+id/old_input"
+              android:layout_marginStart="23dp"
+              android:labelFor="@id/name_input"
+              android:textColor="@color/gray"
+    />
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/email_inputi"
+              app:layout_constraintTop_toBottomOf="@id/email_label"
+              android:layout_marginStart="20dp"
+              android:layout_marginEnd="20dp"
+              android:inputType="text"
+    />
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:id="@+id/younost"
+               android:src="@drawable/rut"
+               app:layout_constraintTop_toBottomOf="@id/toolbar"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+    />
+
+</android.support.constraint.ConstraintLayout>

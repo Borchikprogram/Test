@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Юность</string>
+    <string name="tab_text_1">Крепышы</string>
+    <string name="tab_text_2">Средняя</string>
+    <string name="tab_text_3">Старшая</string>
+    <string name="create_account">У вас нет аккаунта?
+        <b>Зарегистрируйтесь!</b>
+    </string>
+    <string name="please_enter_password">Please enter your password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_training">TrainingActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+</resources>

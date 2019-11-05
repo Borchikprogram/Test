@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                                                     xmlns:tools="http://schemas.android.com/tools"
+                                                                                     android:layout_width="match_parent"
+                                                                                     android:layout_height="match_parent"
+                                                                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                                                     android:background="@drawable/back"
+                                                                                     tools:context=".activities.HomeActivity">
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+
+            android:elevation="4dp"
+            app:contentInsetStart="0dp"
+            tools:ignore="MissingConstraints">
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:text="Клуб дзюдо Юность"
+                      android:textColor="@color/black"
+                      android:textAlignment="center"
+                      android:textSize="19sp"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      app:layout_constraintTop_toTopOf="parent"
+            />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.Toolbar>
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:id="@+id/younost"
+
+               android:src="@drawable/rrr"
+               app:layout_constraintTop_toBottomOf="@id/toolbar"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+    />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              app:layout_constraintTop_toBottomOf="@id/younost"
+              android:textAlignment="center"
+              android:id="@+id/qwq"
+              android:textColor="@color/black"
+              android:textStyle="italic"
+              android:textSize="17dp"
+              android:text="Cекция дзюдо Юность открылась в 2003 году. На начальном этапе секция насчитывала 16 человек. В данный момент насчитывает более 250 человек разных возрастов в том числе 4 мастера спорта по дзюдо и самбо и более 10 кандидатов в мастера спорта. Cпортсмены секции дзюдо одерживали победы на сореваниях различного уровня. Секция является одной из лидирующих в городе Магнитогорске."
+              tools:layout_editor_absoluteX="0dp"/>
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="180dp"
+               android:id="@+id/youn"
+
+               android:src="@drawable/youn"
+               app:layout_constraintTop_toBottomOf="@id/qwq"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+    />
+    <include layout="@layout/bottom_navigation_view"></include>
+
+</android.support.constraint.ConstraintLayout>
